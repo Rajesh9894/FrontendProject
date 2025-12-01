@@ -1,0 +1,50 @@
+/* Page basic style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading */
+.title {
+    text-align: center;
+    background: #0077ff;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Layout container using Flexbox */
+.container {
+    display: flex;
+    justify-content: center; /* center all boxes */
+    gap: 20px;              /* space between boxes */
+    margin-top: 40px;
+}
+
+/* Box Styles (Box Model) */
+.box {
+    width: 100px;
+    height: 150px;
+    padding: 20px;              /* inside spacing */
+    border: 3px solid black;     /* border */
+    margin: 10px;                /* outside spacing */
+    background: lightgray;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Different colors for each box */
+.box1 { background: #ffa07a; }
+.box2 { background: #90ee90; }
+.box3 { background: #87cefa; }
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background: black;
+    color: white;
+}
