@@ -88,36 +88,36 @@
 
 //Using condition looping in javaScript to print even numbers
 
-for(var i=1; i<50; i++){
-    if (i%2==0){
-        console.log(i)
-    }
-}
+// for(var i=1; i<50; i++){
+//     if (i%2==0){
+//         console.log(i)
+//     }
+// }
 
 //Using condition looping in javaScript to print odd numbers
 
-for(var i=1; i<20; i++){
-    if(i%2!==0){
-        console.log(i)
-    }
-}
+// for(var i=1; i<20; i++){
+//     if(i%2!==0){
+//         console.log(i)
+//     }
+// }
 
 //Using function to print prime numbers between 1 to 50
-for (let num = 2; num <= 50; num++) {
+// for (let num = 2; num <= 50; num++) {
 
-    let isPrime = true;
+//     let isPrime = true;
 
-    for (let i = 2; i < num; i++) {  
-        if (num % i === 0) {       
-            isPrime = false;
-            break;
-        }
-    }
+//     for (let i = 2; i < num; i++) {  
+//         if (num % i === 0) {       
+//             isPrime = false;
+//             break;
+//         }
+//     }
 
-    if (isPrime) {
-        console.log(num);
-    }
-}
+//     if (isPrime) {
+//         console.log(num);
+//     }
+// }
 
 
 

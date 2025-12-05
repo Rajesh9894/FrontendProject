@@ -1,0 +1,581 @@
+-------Day 1-------
+Record vedio-->https://us06web.zoom.us/rec/share/XwgsIyGG5eON7sMf72MxhAVWlxQW7AqJ46L9jsBMe9epVjHE0piUVTBjLIVIM5we.ZIkRmQd1CIPlqVOL --Passcode: WvB^xyG6
+
+History of JavaScript (Simplified & Neat)
+
+-->Birth of JavaScript (1995)
+-->JavaScript was created by Brendan Eich, a programmer at Netscape.
+-->He built the first version of JavaScript in just 10 days.
+-->It was originally called Mocha, then LiveScript, and finally JavaScript.
+
+Standardization(1997)
+
+To ensure all browsers use JavaScript in the same way, it was standardized by
+ECMA International.
+
+This standard is called ECMAScript (ES).
+
+ES = Standard name
+JavaScript = Implementation
+
+JavaScript ?
+ -->it is a programming language which is mainly used to frontend and backend.
+
+console.log()-->it is used to show output and if you what just went to the edge or chrome just right click and inspect to see.
+
+ Data  -->laptop[brant,color,model]
+
+primitive  --> str , num, bool, undefine, null
+non primitive --> array,object.
+
+datatype--typeof() used to find the datatype
+1.string
+2.number
+3.Boolean
+4.undefined
+var a = null;
+console.log(a)
+
+console.log(typeof 123);
+console.log(typeof "str");
+console.log(typeof true);
+console.log(typeof "");
+
+Variables-- 1.var  2.let  3.const
+
+var a = 10;
+console.log(a);
+
+var bag = "book";
+var bottle = "water";
+console.log(bag, bottle);
+
+console.log(2 > 4);
+console.log(12 > 4);
+
+var a = 15; // =  assgin operator
+console.log(4 == 4); // check 2 values    OP = T
+console.log(4 == "4"); // check 2  values only values check no consider data type  OP = T
+console.log(4 === 4); // check 2 data types and values  OP = T
+console.log(4 === "4"); // check 2 data types and values  OP = F
+
+How to declare a variable ?
+var bag ="book"
+console.log(bag)
+
+(ecma)-Emission Control Manufacturers Association (ECMA) Es6 currently using version javascript is  particular version is Es6.
+--> a global standards organization for information and communication systems.
+
+if else:
+console.log(4 == '4')
+== --> check value
+=== -->checks values with type.
+
+--------Day 2--------
+Record vedio-->https://us06web.zoom.us/rec/share/dQxOl3H9884vJ8ft32DzTdlZ3Z7JNl6u7rzizXxFUtXMTsseajwIyhkMzOALENWO.dPiRHZ6H5_-pIJic?from=hub--Passcode: Gbf##5US
+
+if else
+var age = 10;
+if(age >=18){
+    console.log("you can vote");
+}
+else{
+    console.log("you cant  vote");
+}
+
+else if
+
+var age = 19
+if(age >=19){
+    console.log("you can get licence")
+}
+else if (age>=18){
+    console.log("you get llr")
+}
+else{
+    console.log("you can't to get licence")
+}
+
+Function
+
+syntax:
+
+function <function name>{
+//code
+}
+
+function add(a,b){
+    console.log(a+b)
+}
+add(10,30)
+
+// function
+function add(a, b) {
+  console.log(a + b);
+}
+add(2, 4);
+add(5, 12);
+add(10, 20);
+
+function greet(name){ //parameter
+    console.log("Hi",name)
+}
+greet("Rajesh") //Argument
+
+----------DAY 3--------
+Recorded vedio-->https://us06web.zoom.us/rec/share/Ho8TGxefL6jYobSNlFCD5nCZw-lnRacpkjLQbakJicNmoJkR-JB-A9CPvzb5JmpY.hPM7rT6YuFyS_Waa
+Passcode: P=U8Uu#i
+
+var a = 10; //decalre and assign
+a = 15; //reassign
+var a = 20; //redeclare and assign
+console.log(a);
+
+let b = 5; //decalre and assign
+b = 7; //reassign
+console.log(b);
+
+const c = 10; //only constant or fixed do not reassign and redclare
+console.log(c);
+
+const students = (name) => {
+  console.log("my name is :", name);
+};
+
+students("Rajesh");
+const add = ()=>{
+}
+
+//array
+primitive  --> str , num, bool, undefine, null
+non primitive --> array,object.
+
+array is used to store a multiple values and default it is a dynamic array
+let a =['rajesh','janu','puni']
+
+what is the difference between var ,let, const?
+
+----------------Day 4 ----------------
+Recorded vedio-->https://us06web.zoom.us/rec/share/KtfWNdLHs3aOLwAC0k9qJRJVcv6tpkwg6NGrXuXxW6FV69fQGycW7488zGve1GsG.bV683_BqCGCE18Fo
+Passcode: CLh3#F+Q
+
+Array basic methods
+
+-->push, pop, shift, unshift.
+details.push("Hi")   // add the element in last
+details.pop()        // last element in remove
+details.unshift(50)  // add the element in first
+details.shift()      // first element in remove
+console.log(details);
+
+
+array is used to store a multiple values and default it is a dynamic array
+let details =['puni','janu','rajesh']
+
+details.push("dharni");
+console.log(details);
+details.pop();
+console.log(details);
+details.unshift("visu");
+console.log(details);
+details.shift();
+console.log(details);
+
+using index and length in array.
+index is used to take a particular element in the array
+
+console.log(details[0]);//index
+console.log(details.length);
+
+console.log(details[2]);    // index --> 0 Positive -1 Negative start  use []
+console.log(details.length);  // length --> 1 start  use .
+console.log(details[details.length - 3]);   // op -2 index value
+
+object-key and value
+
+let details ={
+    name = 'rajesh'
+    std = 'bca'
+    age = 20,
+}
+console.log(details)
+console.log(details.age) // 20
+console.og(details["age"]) //20
+
+Array or object which is best
+
+let car ["tata","nexon","ax5"] //array
+
+let car ={  //object
+brand:"tata",
+model:"nexon"
+}
+
+Exmple:
+let car =[
+    {
+    brand:"tata",
+    model:"nexon"
+    },
+    {
+    brand:"taa",
+    model:"nexon"
+    },
+    {
+    brand:"tata",
+    model:"nexon"
+    },
+    {
+    brand:"tata",
+    model:"nexon"
+    }
+]
+console.log(car[2].brand)  // array inside object
+
+Loop and advance methods
+//while loop ,do while , for , for in, for of, foreach.
+
+what is loop?
+loop is a repetation.
+why use?
+minimel the process.
+
+//initilizatation;condition;increment or decreament operator.
+for(let i=1; i<=10; i++){
+    console.log(i)
+}
+
+-----------Day 5--------------
+Recorded vedio-->https://us06web.zoom.us/rec/share/tFi4oz8xrNyPufl0czjXOJDuUCg6hEwoXaseCKGGelfny-EX22b1nsu8QrDxIRCc.XBZqjgCeNpH2lNHL
+Passcode: 05B+!BMv
+
+let data = ["Raj", "Janu", "puni", "visu"];
+for (let i = 0; i < data.length; i++) {
+    console.log(data[i]);
+}
+
+//print even number using condition and loop
+
+for(i=1;i<=20;i++){
+    if(i%2==0){
+        console.log(i,"its a even number")
+    }
+}
+
+// to print odd
+
+for(i=1;i<=20;i++){
+    if(i%2!=0){
+        console.log(i,"its a odd number")
+    }
+}
+
+//to print prime
+
+for (let i = 2; i <= 20; i++) {
+    let isPrime = true;
+
+    for (let j = 2; j < i; j++) {
+        if (i % j === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        console.log(i, "is a prime number");
+    }
+}
+
+
+for in
+
+syntax:
+
+for(key in object){
+//code
+}
+
+let a ={
+    name:"Rajesh",
+    age:20,
+    std:"bca",
+    role:"dev"
+}
+
+for(let key in a){
+    console.log(a[key]);
+}
+
+for of
+
+let a = ["rajesh","janu","puni","visu"];
+
+for(let data of a){
+    console.log(data);
+}
+
+inbuild-methodos>function--user<polifiles-->to do like duplicate the function that the function is already created and we just duplicate that to re-write.
+
+foreach -- is used to itterate the loop
+()=>{   //anonomus function
+ 
+}
+
+let persons = ["rajesh","janu","puni","visu"];
+
+persons.forEach((characters)=>{
+    console.log(characters);
+})
+
+---------------Day 6-------------------
+Recorded vedio-->https://us06web.zoom.us/rec/share/On4jGGsTkClREozt7zzWzADAennF0VYl6oD8swxPObFfhsAtY6KNsQ_8eLMzgUlZ.0odpXbp0QrDP-nNT?from=hub
+Passcode: .x$#CB6V
+Array Methods
+
+map,find,filter,reduce,slice,splice,indexof,include(string Array) ,flat, flarmap ,reverse ,at, sort ,tosort
+
+**MAP-**Map is used to transform an array
+1. map()
+Used to create a new array by applying a function to each element.
+Does not modify the original array.
+
+2. find()
+Used to find the first value that satisfies a given condition.
+Returns one value, not an array.
+Returns undefined if not found.
+
+3. filter()
+Used to filter values based on a condition.
+Returns a new array of all matching values.
+
+4. reduce()
+Used to reduce array values into a single value (sum, product, merge, count, etc.).
+Works using a callback accumulator.
+
+5. slice()
+Used to copy a portion of an array.
+Returns a new array.
+Does not change the original array.
+
+6. splice()
+Used to add, remove, or replace elements in an array.
+Modifies the original array.
+
+7. indexOf()
+Used to find the index of a value.
+Returns -1 if the value is not found.
+
+8. includes()
+Used to check whether a value exists in an array or string.
+Returns true/false.
+
+9. flat()
+Used to flatten nested arrays into a single-level array.
+
+10. flatMap()
+Combination of map() + flat() (one-level flat).
+Used to transform and then flatten the result.
+
+11. reverse()
+Used to reverse the order of array items.
+Modifies the original array.
+
+12. at()
+Used to get a value by index, supports negative index.
+Example: arr.at(-1) gives the last element.
+
+13. sort()
+Used to sort array values.
+Converts elements to strings by default.
+Modifies the original array.
+Custom sorting can be done using a compare function.
+
+14. toSorted()
+New method.
+Same as sort() but does not modify the original array.
+Returns a new sorted array.
+
+Summary Table:
+Method	Modifies Original?		Returns
+map()	        ❌ No	               	New array
+find()	        ❌ No	               	Single value
+filter()	❌ No			New array
+reduce()	❌ No			Single value
+slice()		❌ No			New array
+splice()	✅ Yes			Modified array
+indexOf()	❌ No			Index number
+includes()	❌ No			Boolean
+flat()		❌ No			New array
+flatMap()	❌ No			New array
+reverse()	✅ Yes			Modified array
+at()		❌ No			Single value
+sort()		✅ Yes			Sorted same array
+toSorted()	❌ No			New sorted array
+
+let persons = ["rajesh","janu","puni","visu"];
+let data = persons.map((elements)=>{
+    return elements + 10;
+})
+console.log(persons)
+
+let persons = ["rajesh","janu","puni","visu"];
+
+let data = persons.find((da)=>{
+    return da.length > 4
+})
+console.log(persons)
+
+let persons = ["rajesh","janu","puni","visu"];
+
+let data = persons.filter((da)=>{
+    return da.length > 2;
+});
+
+console.log(persons);
+
+---------------Day 7 & 8-------------
+Recorded vedio-->
+https://us06web.zoom.us/rec/share/tRJd900g4_NSALvddNOeoojkv5GHCLrAD-ItySuCZDiAMy_YGyQYtYTBRhFQ0FE7.YSgWzPeT8WCiAHV6?from=hub
+Passcode: poyb+4H8
+
+https://us06web.zoom.us/rec/share/iEk2DiZezGGvkL0zXN0mi-wm0POeH3qg_Ureb4unliFxSpICI-qFLrBhqRdNosA_.5-hT39-I-0SNK-wK?from=hub
+Passcode: 2.7t?.3R
+//concat,indexof,include(string array)
+
+concat-combination of 1 to 2 arrays.
+
+let a = ["rajesh","janu","puni","visu"];
+let b =['sharmi'];
+console.log(a.concat(b));
+
+//indexof
+
+let a = ["rajesh","janu","puni","visu"];
+console.log(a.indexOf("puni"));
+
+// flat
+let nestedArray = [1, [2, 3], [4, [5, 6]]];
+let flattenedArray = nestedArray.flat(2);
+console.log(flattenedArray);
+
+// reverse
+let chars = ["a", "b", "c", "d"];
+chars.reverse();
+console.log(chars);
+
+// at
+let letters = ["x", "y", "z"];
+console.log(letters.at(-1));
+
+// sort
+let unsorted = [3, 1, 4, 2];
+unsorted.sort();
+console.log(unsorted);
+
+
+---------------Day 9---------
+Duration: 00:43:30
+Share link: https://us06web.zoom.us/rec/share/UgPhJiy0NvDdDncvOWMnU6PHA9vsc4XlBGVB-tOltg45TZVrF6NYf7DS_PHitw0.vroFAO-9ygJobDZN
+Passcode: *0t6hdtM
+
+//sort reverse at flattarray
+4. flat() / flatten array
+Does not modify the original array.
+flat(1) → flattens 1 level
+flat(Infinity) → flattens all levels completely.
+
+let a = [1, [2, [3, [4]]]];
+
+console.log(a.flat());         // [1, 2, [3, [4]]]
+console.log(a.flat(2));        // [1, 2, 3, [4]]
+console.log(a.flat(Infinity)); // [1, 2, 3, 4]
+
+//flatmap?
+
+API-application programming interface
+
+-->In JavaScript, an API is a set of tools or services that your JavaScript code can use to communicate with something else.
+
+backend data > json(array of object) >  
+
+Types of APIs in JavaScript:
+
+1. Browser APIs 
+
+These are built into the browser.
+
+Examples:
+
+DOM API → lets JS control HTML elements
+Fetch API → used to call servers (get data)
+LocalStorage API → store data in browser
+Geolocation API → get user's location
+Canvas API → draw graphics
+
+Example:
+ document.getElementById("btn"); // DOM API
+2. Web APIs (Server APIs)
+
+These are APIs created by websites/servers that provide data.
+
+Example:
+Calling a weather API to get temperature.
+
+fetch("https://api.weather.com/data")
+    .then(res => res.json())
+    .then(data => console.log(data));
+
+Here, fetch() sends a request → API sends back data → JS uses it.
+
+Synchronous:
+JavaScript runs one task at a time, in order, line by line.
+It waits for one task to finish before starting the next one.
+✔ Sync = Blocking → if one line takes time, everything waits.
+
+Asynchronous:
+JavaScript can start a task and continue with the next task without waiting.
+Async code will finish later, in the background.
+
+Example (Async using setTimeout):
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Async Task");
+}, 2000);
+
+console.log("End");
+
+await?
+is a keyword used inside async functions to wait for a Promise to finish.
+It pauses the function until the Promise returns a result.
+
+JavaScript Runtime Environment (JS Runtime)
+
+A JavaScript Runtime Environment is the place where JavaScript code runs.
+JavaScript cannot run by itself —
+
+it needs an environment that provides:
+
+->Memory
+->APIs
+->A way to execute code
+->Event loop (for async tasks).
+
+| Engine Name                          | Used In            | Developed By    |
+| ------------------------------------ | ------------------ | --------------- |
+|   V8                                 | Chrome, Node.js    | Google          |
+|   SpiderMonkey                       | Firefox            | Mozilla         |
+|   JavaScriptCore (JSC)   /   Nitro   | Safari             | Apple           |
+|   Chakra                             | Old Microsoft Edge | Microsoft       |
+|   Hermes                             | React Native       | Meta (Facebook) |
+
+jsengine chrome (v8) - it is open source
+
+node js --> JS run time env and it is a cross platform.
+node js --> (v8 and c++ libuv)
+
+so the JavaScript is used in both frontend and backend.
+
+frontend - html,css,javascript,React.
+Backend - node js , express js.
