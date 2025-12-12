@@ -12,6 +12,8 @@ Standardization(1997)
 
 To ensure all browsers use JavaScript in the same way, it was standardized by
 ECMA International.
+CMAScript is the standardized specification that underpins JavaScript and other scripting languages. It provides a consistent set of rules and guidelines to 
+ensure interoperability across different web browsers. JavaScript, as an implementation of ECMAScript, follows these rules and evolves with each new edition of the specification
 
 This standard is called ECMAScript (ES).
 
@@ -20,19 +22,33 @@ JavaScript = Implementation
 
 JavaScript ?
  -->it is a programming language which is mainly used to frontend and backend.
+JavaScript is a dynamic, lightweight, and interpreted programming language primarily used to create interactive and dynamic content on web pages. It is one of the core technologies
+of the web, alongside HTML and CSS, and enables developers to implement complex features such as real-time updates, animations, and user interactions.
+JavaScript operates on both the client-side (in the browser) and the server-side (using environments like Node.js). On the client-side, it interacts with the Document Object Model
+(DOM) to manipulate HTML and CSS dynamically, allowing for seamless updates to a webpage without requiring a reload.
 
 console.log()-->it is used to show output and if you what just went to the edge or chrome just right click and inspect to see.
-
  Data  -->laptop[brant,color,model]
 
-primitive  --> str , num, bool, undefine, null
+primitive  --> str , num, bool, undefine, null(Bigint,Symbol).
+
+num - Number data type in JavaScript can be used to hold decimal values as well as values without decimals.
+str - The string data type in JavaScript represents a sequence of characters that are surrounded by single or double quotes.
+undefined - This means that a variable has been declared but has not been assigned a value, or it has been explicitly set to the value `undefined`.
+Bool - The boolean data type can accept only two values i.e. true and false.
+null - This data type can hold only one possible value that is null.
+
 non primitive --> array,object.
+
+obj - An object in Javascript is an entity having properties and methods. Everything is an object in javascript.
+arr - With the help of an array, we can store more than one element under a single name.
 
 datatype--typeof() used to find the datatype
 1.string
 2.number
 3.Boolean
 4.undefined
+
 var a = null;
 console.log(a)
 
@@ -42,6 +58,10 @@ console.log(typeof true);
 console.log(typeof "");
 
 Variables-- 1.var  2.let  3.const
+
+var: Function-scoped and can be redeclared.
+let: Block-scoped and cannot be redeclared.
+const: Block-scoped and immutable.
 
 var a = 10;
 console.log(a);
@@ -128,6 +148,7 @@ Passcode: P=U8Uu#i
 
 var a = 10; //decalre and assign
 a = 15; //reassign
+
 var a = 20; //redeclare and assign
 console.log(a);
 

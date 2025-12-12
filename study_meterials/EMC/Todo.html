@@ -1,0 +1,335 @@
+<!-- <div id="one">
+    <h1>hello</h1>
+</div>
+
+<script>
+    var one = document.getElementById("one")
+    console.log(one.innerHTML)
+</script> -->
+
+<!-- querySelector 
+ <div class="one">
+    <h1>hello</h1>
+</div>
+
+<script>
+    var one = document.querySelector(".one")
+    console.log(one.textContent)
+
+</script> -->
+
+<!-- querySelectorAll
+
+<h1 class="one">hello</h1>
+<h1 class="one">hell</h1>
+<h1 class="one">hel</h1>
+
+<script>
+    var one = document.querySelectorAll(".one");
+    for(count=0;count<one.length;count=count+1){
+        console.log(one[count].textContent);
+
+    }
+</script> -->
+
+<!-- <div>
+    <h1>Rajesh</h1>
+    <h1>Janu</h1>
+</div>
+
+<script>
+    var div = document.querySelector("div")
+    var h1 = document.createElement("h1")
+    h1.textContent ="hello"
+    // div.append("Hello")
+    // div.prepend("Janu")
+    div.insertAdjacentElement("",h1)
+</script> -->
+
+<input id="input">
+<button onclick="update()">Add</button>
+<ul id="container">
+    <li>Hello
+        <button onclick="Deleteitem(event)">Delete</button>
+    </li>
+</ul>
+<script>
+    var input = document.getElementById("input")
+    var ul = document.getElementById("container")
+
+    function update(){
+        var listitem = document.createElement("li")
+        listitem.innerHTML = input.value + "<button onclick='Deleteitem(event)'>Delete</button>"
+        ul.append(listitem)
+    }
+
+    function Deleteitem(event){
+        event.target.parentElement.remove()
+    }
+
+</script>
+
+<style>
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Input Styling */
+#input {
+    width: 100%;
+    max-width: 600px;
+    padding: 18px 24px;
+    font-size: 1.1rem;
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background: white;
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#input:focus {
+    border-color: #4a6ee0;
+    box-shadow: 0 0 0 3px rgba(74, 110, 224, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Add Button */
+button[onclick="update()"] {
+    width: 100%;
+    max-width: 600px;
+    padding: 18px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    letter-spacing: 0.5px;
+}
+
+button[onclick="update()"]:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.5);
+}
+
+button[onclick="update()"]:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* List Container */
+#container {
+    width: 100%;
+    max-width: 600px;
+    list-style-type: none;
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* List Items */
+#container li {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    margin-bottom: 15px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    border-left: 5px solid #4a6ee0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.4s ease-out;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#container li:hover {
+    transform: translateX(5px);
+    background: linear-gradient(135deg, #f0f4ff 0%, #e2e8ff 100%);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Delete Button */
+#container li button {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+    min-width: 100px;
+}
+
+#container li button:hover {
+    background: linear-gradient(135deg, #ff5252 0%, #ff7b7b 100%);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(255, 107, 107, 0.4);
+}
+
+#container li button:active {
+    transform: translateY(0) scale(0.98);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Responsive Design */
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    #input, button[onclick="update()"], #container {
+        max-width: 95%;
+    }
+    
+    #input {
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+    
+    button[onclick="update()"] {
+        padding: 16px;
+        font-size: 1.1rem;
+    }
+    
+    #container {
+        padding: 20px;
+    }
+    
+    #container li {
+        padding: 18px 20px;
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    #container li:hover {
+        transform: translateX(3px);
+    }
+    
+    #container li button {
+        align-self: flex-end;
+        padding: 9px 20px;
+        min-width: 90px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+    
+    #input, button[onclick="update()"], #container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    #input {
+        padding: 14px 18px;
+        font-size: 0.95rem;
+    }
+    
+    button[onclick="update()"] {
+        padding: 14px;
+        font-size: 1rem;
+    }
+    
+    #container {
+        padding: 15px;
+    }
+    
+    #container li {
+        padding: 16px 18px;
+        font-size: 0.95rem;
+    }
+    
+    #container li button {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+        min-width: 80px;
+        align-self: stretch;
+        text-align: center;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    #input, button[onclick="update()"], #container {
+        max-width: 700px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+    
+    #input {
+        background: #2d3748;
+        border-color: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    #input:focus {
+        border-color: #667eea;
+        background: #2d3748;
+    }
+    
+    #container {
+        background: #2d3748;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    #container li {
+        background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+        color: #e2e8f0;
+        border-left-color: #667eea;
+    }
+    
+    #container li:hover {
+        background: linear-gradient(135deg, #5a6578 0%, #3d4859 100%);
+    }
+}
+</style> 
+
