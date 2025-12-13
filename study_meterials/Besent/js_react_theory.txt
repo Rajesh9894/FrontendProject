@@ -419,8 +419,8 @@ Returns a new sorted array.
 
 Summary Table:
 Method	Modifies Original?		Returns
-map()	        ❌ No	               	New array
-find()	        ❌ No	               	Single value
+map()	    ❌ No	        New array
+find()	    ❌ No	        Single value
 filter()	❌ No			New array
 reduce()	❌ No			Single value
 slice()		❌ No			New array
@@ -438,22 +438,22 @@ let persons = ["rajesh","janu","puni","visu"];
 let data = persons.map((elements)=>{
     return elements + 10;
 })
-console.log(persons)
+console.log(data)
 
 let persons = ["rajesh","janu","puni","visu"];
 
 let data = persons.find((da)=>{
     return da.length > 4
 })
-console.log(persons)
+console.log(data)
 
 let persons = ["rajesh","janu","puni","visu"];
 
 let data = persons.filter((da)=>{
-    return da.length > 2;
+    return da.length > 3
 });
 
-console.log(persons);
+console.log(data);
 
 ---------------Day 7 & 8-------------
 Recorded vedio-->
