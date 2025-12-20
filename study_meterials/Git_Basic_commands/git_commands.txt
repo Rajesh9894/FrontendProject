@@ -1,0 +1,90 @@
+git add . 
+git commit -m ""
+git push 
+git status 
+git pull 
+git branch 
+git checkout -  git checkout -b new_branch -[create] and  git checkout -d new_branch-[Delete]
+git reset - to revert changes
+git reset --hard HEAD~1 --> it will take you to upword as one commit 
+git reset --soft HEAD~1 --> it like to add new file or have changes 
+
+git merge --to merge the branches 
+git diff
+git log - TO Quite using Q
+git show
+git push --force --> force to push 
+git amend --> to commit changes in last commit 
+
+git conflit- like 2 different branches having changes in same line when you merge that changes it appears name git conflit.
+
+
+Basic Git Commands (Corrected):
+
+🔹 Add & Commit:
+git add .              # Add all changes
+git commit -m "msg"    # Commit with message
+git push               # Push to remote
+
+🔹 Check Status & History:
+git status              # Check repo status
+git log                 # Commit history (press Q to quit)
+git show                # Show last commit details
+git diff                # Show file changes
+
+🔹 Branch Commands
+git branch              # List branches
+git checkout branchname # Switch branch
+git checkout -b new_branch   # Create & switch to new branch
+git branch -d new_branch     # Delete branch
+
+🔹 Pull & Merge:
+git pull                # Fetch + merge from remote
+git merge branchname    # Merge branch into current branch
+
+🔹 Reset (Revert Changes):
+git reset file_name     # Unstage a file
+
+Undo last commit:
+git reset --soft HEAD~1   # Keeps changes staged
+git reset --hard HEAD~1   # Deletes commit + changes (DANGER)
+⚠️ --hard will permanently remove changes.
+
+🔹 Amend Last Commit:
+git commit --amend
+✔️ Used to modify last commit message or files.
+
+🔹 Force Push:
+git push --force
+⚠️ Use only when you changed commit history
+(Reset / Amend)
+
+Git Conflict (Correct Explanation):
+What is Git Conflict?
+Git Conflict (Correct Explanation).
+
+❓ What is Git Conflict?
+A Git conflict happens when:
+Two branches modify the same line of a file
+Git doesn’t know which change to keep during merge
+
+🔧 How to Fix Conflict
+Open the conflicted file.
+Choose the correct code.
+
+Remove conflict markers:
+<<<<<<<
+=======
+>>>>>>>
+
+Then run:
+git add .
+git commit -m "Resolved merge conflict".
+
+
+<-------------------------------------------------->
+git pull → fetch + merge.
+git reset --soft → undo commit, keep changes.
+git reset --hard → delete commit + changes.
+git amend → edit last commit.
+git conflict → same line edited in multiple branches.
