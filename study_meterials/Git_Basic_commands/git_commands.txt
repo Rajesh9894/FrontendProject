@@ -4,14 +4,14 @@ git push
 git status 
 git pull 
 git branch 
-git checkout -  git checkout -b new_branch -[create] and  git checkout -d new_branch-[Delete]
-git reset - to revert changes
+git checkout ->  git checkout -b new_branch -[create] and  git checkout -d new_branch-[Delete]
+git reset -> to revert changes
 git reset --hard HEAD~1 --> it will take you to upword as one commit 
 git reset --soft HEAD~1 --> it like to add new file or have changes 
 
-git merge --to merge the branches 
-git diff
-git log - TO Quite using Q
+git merge -->to merge the branches 
+git diff--
+git log -> TO Quite using Q
 git show
 git push --force --> force to push 
 git amend --> to commit changes in last commit 
@@ -20,6 +20,21 @@ git conflit- like 2 different branches having changes in same line when you merg
 
 
 Basic Git Commands (Corrected):
+
+Go to GitHub → New Repository:
+Repository name 
+Set Public
+Click Create repository
+Open Git Bash here
+git init
+git status
+git add .
+git commit -m "Initial portfolio upload"
+git remote add origin https://github.com/your-username/portfolio.git
+git remote -v
+git branch -M main
+git push -u origin main
+
 
 🔹 Add & Commit:
 git add .              # Add all changes
@@ -87,4 +102,24 @@ git pull → fetch + merge.
 git reset --soft → undo commit, keep changes.
 git reset --hard → delete commit + changes.
 git amend → edit last commit.
-git conflict → same line edited in multiple branches.
+git conflict → same line edited in multiple branches
+
+------------------------------------------------->
+
+mkdir React_prg
+cd React_prg
+
+npm create vite@latest my-react-app
+cd my-react-app
+
+npm install
+npm run dev
+
+npm audit fix-->Fix vulnerabilities (Safe)
+ls
+rm -rf node_modules-->Delete
+rm package-lock.json-->Delete Json file.
+npm install 
+npm run dev.
+
+ 

@@ -1,0 +1,314 @@
+======================
+# JavaScript Notes
+======================
+
+======================
+## 1. Introduction
+======================
+- JavaScript (JS) is a **dynamically typed language**.
+- Identifiers in JS:
+  - Must be **unique names**
+  - Must begin with a **letter** (`A-Z` or `a-z`) or `$` or `_`.
+  - Cannot begin with a number.
+  - **Case-sensitive**.
+
+Examples:
+let Lname = "JavaScript";
+let $Lname = "JS";
+let _Lname = "JS";
+// let 0Lname = "Not allowed"; // ❌
+
+- Naming Conventions:
+  - camelCase
+  - PascalCase
+  - under_case
+
+======================
+## 2. Variables
+======================
+- Types: `var`, `let`, `const`
+
+### 2.1 var
+var age;       // Declaration (undefined)
+age = 20;      // Initialization
+var age = 21;  // Redeclaration allowed
+age = "twenty"; // Re-assignment allowed
+console.log(age);
+
+### 2.2 let
+let newAge;    // Declaration
+newAge = 21;   // Initialization
+// let newAge = 30; // Redeclaration not allowed
+newAge = "twentyone"; // Re-assignment allowed
+console.log(newAge);
+
+### 2.3 const
+const employeeName = "xyz"; // Declaration + Initialization
+// employeeName = "abc";   // Re-assignment not allowed
+// const employeeName = "abc"; // Redeclaration not allowed
+
+### 2.4 Popup and Input Methods
+alert(employeeName);             // Popup
+document.write(newAge);          // Write to document
+document.writeln(newAge);        // Write line
+confirm(newAge);                 // Confirm dialog
+
+let userAge = prompt("Enter your age"); // Input
+console.log(userAge);
+
+======================
+## 3. Data Types
+======================
+### 3.1 Primitive
+- Number
+- String (' ', " ", ``)
+- Boolean
+- Undefined
+- Null
+
+### 3.2 Non-Primitive (Reference)
+- Array
+- Object
+- Functions
+- Other data structures
+
+======================
+## 4. Operators
+======================
+### 4.1 Arithmetic Operators
+num++;   // Post-increment
+++num;   // Pre-increment
+num--;   // Post-decrement
+--num;   // Pre-decrement
+
+### 4.2 Assignment Operators
+let x = 10;
+x += 5;  // x = x + 5
+x -= 2;  // x = x - 2
+
+### 4.3 Comparison Operators
+console.log(5 > 3);  // true
+console.log(5 === 5);// true
+console.log(5 !== 3);// true
+
+### 4.4 Logical Operators
+- AND (&&): True if both conditions true
+- OR (||): True if at least one condition true
+- NOT (!): Negates condition
+
+### 4.5 String Concatenation
+let str = "hello";
+let str1 = " World";
+let output = str + str1;
+console.log(output);
+console.log(str + " " + str1 + " welcome");
+
+### 4.6 Template Strings
+let newstr = `JavaScript`;
+let newstr1 = `${newstr} is a scripting language`;
+console.log(newstr1);
+
+let num = 5;
+let first = 1;
+console.log(`${first}*${num}=${first*num}`);
+
+======================
+## 5. Type Conversion
+======================
+### 5.1 Implicit
+let num1 = "45";
+let num2 = 45;
+let add = num1 + num2;
+console.log(add); // "4545"
+
+console.log(10 + true);      // 11
+console.log(10 + undefined); // NaN
+console.log(10 + null);      // 10
+console.log(typeof (10 + [1])); // string
+console.log(10 + {});
+console.log(10 + '');
+
+### 5.2 Explicit
+console.log(10 + Number("10")); // 20
+console.log(Number(" "));       // 0
+console.log(Number("abc"));     // NaN
+console.log(Number(true));      // 1
+console.log(Number(false));     // 0
+console.log(Number(undefined)); // NaN
+console.log(Boolean(""));
+console.log(Boolean("123"));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(Infinity));
+console.log(Boolean(-Infinity));
+console.log(Boolean(NaN));
+console.log(String(123));
+
+======================
+## 6. Console Methods
+======================
+console.log("Message");
+console.warn("Warning");
+console.error("Error");
+console.clear();
+
+======================
+## 7. Flow Control Statements
+======================
+- Conditional Statements:
+  - if, if...else, if...else if...else
+  - Ternary operator
+  - switch statement
+
+### 7.1 if...else
+let age = 20;
+if(age >= 18){
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}
+
+### 7.2 Nested if
+let age = 10, height = 175, weight = 70;
+
+if(age >= 18){
+    if(height >= 155){
+        if(weight >= 60){
+            console.log("You are selected");
+        } else {
+            console.log("Weight is not matched");
+        }
+    } else {
+        console.log("Height is not matched");
+    }
+} else {
+    console.log("Age is not selected");
+}
+
+### 7.3 Ternary Operator
+let psw_input = false;
+psw_input ? console.log("Welcome") : console.log("Password Incorrect");
+
+### 7.4 Switch Statement
+let trafficlight = "speed";
+
+switch(trafficlight){
+    case "red": console.log("Stop"); break;
+    case "yellow": console.log("Wait"); break;
+    case "green": console.log("Go"); break;
+    default: console.log("Pay fine"); break;
+}
+
+// Fall-through
+let day = "saturday";
+
+switch(day){
+    case "Monday":
+    case "Tuesday":
+    case "Thursday":
+        console.log("Weekdays"); break;
+    case "Saturday":
+    case "Sunday":
+        console.log("Weekend"); break;
+    default:
+        console.log("It's not a day");
+}
+
+======================
+## 8. Looping Statements
+======================
+- for, for...of, for...in, while, do...while
+
+### 8.1 For Loop
+for(let i = 1; i <= 10; i++){
+    if(i % 2 === 0) console.log(i); // even numbers
+}
+
+### 8.2 While Loop
+let value = 10;
+while(value >= 1){
+    console.log(value);
+    value--;
+}
+
+### 8.3 Do...While Loop
+let value = 10;
+do {
+    console.log(value);
+    value++;
+} while(value <= 20);
+
+### 8.4 Break and Continue
+for(let i = 1; i <= 20; i++){
+    if(i === 10) continue; // Skip 10
+    console.log(i);
+}
+
+======================
+## 9. Arrays
+======================
+let multipleUser = ["javascript", "React", "html", "css"];
+console.log(multipleUser[0], multipleUser[2], multipleUser[1]);
+console.log(multipleUser.length);
+console.log(multipleUser[multipleUser.length-1]);
+
+======================
+## 10. Objects
+======================
+let Vehicle = {
+    vehicleType: "Four Wheeler",
+    price: 100000,
+    name: "Car",
+    color: "red",
+    fuelType: "petrol"
+};
+
+console.log(Vehicle);
+console.log(Vehicle.price);
+
+======================
+## 11. Functions
+======================
+### 11.1 Function Declaration
+function printUsername(uName = "Rajesh", uAge = 23){
+    console.log(`Hi ${uName}, Your age is ${uAge}`);
+}
+
+printUsername("Rajesh");
+printUsername();
+printUsername(undefined, 37);
+
+### 11.2 Return & Non-Return
+// Return
+function findRect(l, b){
+    return l * b;
+}
+let newValue = findRect(20, 20);
+console.log(newValue);
+
+// Non-Return
+function nonReturn(){
+    console.log("It is a non-return function");
+}
+let non = nonReturn();
+console.log(non); // undefined
+
+### 11.3 Function with Multiple Return Values
+function cubic(num){
+    return (num**3, "Eighty", true, 120); // Returns last value only
+}
+let newvalue = cubic(4);
+console.log(newvalue); // 120
+
+======================
+## 12. Internal vs External JavaScript
+======================
+- Internal JS: <script> in HTML
+- External JS: .js file linked to HTML
+
+
+
+
+
+
+
