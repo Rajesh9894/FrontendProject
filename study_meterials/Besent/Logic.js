@@ -403,9 +403,28 @@
 // function blockScope(){
 //     if(true){
 //         let block = "Rajesh";
+//         const block1 ="const var";
+//         console.log(block); //Block is not definded.
+//         console.log(block1)
 //     }
-//     console.log(block); //Block is not definded.
-   
 // }
-// blockScope()za
+// blockScope()
 
+// Var ==> globle context ==> server  node.js and clint (window)
+
+// var global = "i am global";
+// console.log(window.global)
+
+// let global1 = "i am global-1";
+// console.log(window.global1)
+
+// const global2 = "i am global-2";
+// console.log(window.global2)
+
+//FUNCTION TYPES 
+//Named zfuncrio 
+//Ananomus Function 
+//Arrow Function
+
+//closure function:
+//IIFE , self invoke function:
